@@ -15,9 +15,7 @@ curl_close($ch);
 
 $data = json_decode($response, true);
 
-print_r($data); // exibe todos os dados
-
-//print_r($data["localidade"]." - ".$data["uf"]); // exibe somente o dados que selecionar
+print_r("CEP: ".$data["cep"]."<br/>Endereco: ".$data["logradouro"]."<br/>Complemento: ".$data["complemento"]."<br/>Bairro: ".$data["bairro"]."<br/>Localidade: ".$data["localidade"]."<br/>UF: ".$data["uf"]."<br/>IBGE: ".$data["ibge"]); // exibe somente o dados que selecionar
 
 
 ?>
